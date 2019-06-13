@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon-bupa.png" type="image/x-icon">
+    <title>Cruz Blanca - Venta Web</title>
+  </head>
+  <body>
+    <main>
+      <div class="modal fade" id="modalAyuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body"><img src="./assets/icons/icon-ayuda.svg">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3>¿Necesitas ayuda?</h3>
+              <h4 class="help">Un asesor te entregará la ayuda que necesitas para completar correctamente la suscripción. <span class="span-blue">Te llamará al telefono registrado:</span></h4>
+              <h5>+569 1234 5678</h5><a class="main-btn center" href="home_ayuda.html">Quiero que me contacten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="inner-container"><img class="logo" src="./assets/icons/logo-CB.svg" alt="CruzBlanca"><a class="phone hide-sm" data-toggle="modal" data-target="#modalAyuda">¿Necesitas ayuda?</a><a class="hide-md hide-lg" data-toggle="modal" data-target="#modalAyuda"><img src="./assets/icons/icon-tel.svg"><a class="backArrow" href="home_ads.html">Volver</a></a></header>
+      <div class="narrow-container">
+        <div class="title ads">
+          <h1>Declaración de salud</h1>
+          <ul class="progress-tracker tracker_steps">
+            <li class="progress-step actual"><span class="progress-marker"> </span>
+              <div class="progress-text hide-sm">Antecedentes del cotizante</div>
+            </li>
+            <li class="progress-step"><span class="progress-marker"> </span>
+              <div class="progress-text hide-sm">Beneficiarios</div>
+            </li>
+            <li class="progress-step"><span class="progress-marker"> </span>
+              <div class="progress-text hide-sm">Listado de preguntas</div>
+            </li>
+            <li class="progress-step"><span class="progress-marker"> </span>
+              <div class="progress-text"> </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disclaimer">
+          <h4>¡Importante!</h4>
+          <p>Es de su exclusiva responsabilidad el llenado completo, correcto y veraz de este documento digital. Si usted no declara alguna enfermedad, patología o condición de salud preexistente la isapre puede:<br><br>1. <span>NEGAR LA COBERTURA</span> para dicha enfermedad por un plazo máximo de hasta 5 años desde la suscripción del contrato o de la incorporación del beneficiario, y/o 2. <span>TERMINAR SU CONTRATO DE SALUD.</span> Esta declaración debe ser llenada, en su totalidad.</p>
+        </div>
+        <div class="line-blue"></div>
+      </div>
+      <div class="wide-container">
+        <div class="section-ads_input flujoads1">
+          <h2>Tus antecedentes</h2>
+          <div class="section-ads_input-container">
+            <div class="section-input_only">
+              <label class="input">Apellido Paterno
+                <input class="disabled" type="text" disabled name="lastname" value="Méndez">
+              </label>
+              <label class="input">Apellido Materno
+                <input class="disabled" type="text" disabled name="lastname2" value="Salgado">
+              </label>
+              <label class="input">Nombres
+                <input class="disabled" type="text" disabled name="names" value="Daniela Andrea">
+              </label>
+              <label class="input">RUT
+                <input class="disabled" type="text" disabled name="rut" value="12.345.678-9">
+              </label>
+              <label class="input">Fecha de nacimiento
+                <input class="disabled" type="text" disabled name="birthday" value="20/03/1986">
+              </label>
+              <label class="input">Correo electrónico
+                <input class="disabled" type="text" disabled name="mail" value="danielamendez@gmail.com">
+              </label>
+            </div>
+            <div class="line-grey"></div>
+            <div class="section-input_only">
+              <label class="input">Institución de salud actual
+                <input class="disabled" type="text" disabled name="institucion" value="Banmédica">
+              </label>
+              <label class="radio"><span>¿Estuvo antes en isapre CruzBlanca?</span>
+                <label class="checkRound">Si
+                  <input class="disabled" type="radio" name="isapreCB" disabled><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input class="disabled" type="radio" name="isapreCB" disabled checked><span class="checkmark"></span>
+                </label>
+              </label>
+              <label class="radio"><span>¿Tiene Pensión de Invalidez?</span>
+                <label class="checkRound">Si
+                  <input class="disabled" type="radio" name="invalidez" disabled><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input class="disabled" type="radio" name="invalidez" disabled checked><span class="checkmark"></span>
+                </label>
+              </label>
+              <label class="input">Causal
+                <input class="disabled" type="text" disabled name="causal" value="">
+              </label>
+              <label class="textarea">Diagnóstico que originó la pensión de invalidez
+                <textarea class="disabled" name="diagnostico" cols="30" rows="10" value="" disabled></textarea>
+                <h5>Máximo 800 caracteres</h5>
+              </label>
+            </div>
+          </div>
+        </div><a class="main-btn center" href="ads_2.html">Siguiente</a>
+      </div>
+    </main>
+    <script src="js/libs/jQuery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

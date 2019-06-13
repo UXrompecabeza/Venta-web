@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon-bupa.png" type="image/x-icon">
+    <title>Cruz Blanca - Venta Web</title>
+  </head>
+  <body>
+    <main>
+      <div class="modal fade" id="modalAyuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body"><img src="./assets/icons/icon-ayuda.svg">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3>¿Necesitas ayuda?</h3>
+              <h4 class="help">Un asesor te entregará la ayuda que necesitas para completar correctamente la suscripción. <span class="span-blue">Te llamará al telefono registrado:</span></h4>
+              <h5>+569 1234 5678</h5><a class="main-btn center" href="home_ayuda.html">Quiero que me contacten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="inner-container"><img class="logo" src="./assets/icons/logo-CB.svg" alt="CruzBlanca"><a class="phone hide-sm" data-toggle="modal" data-target="#modalAyuda">¿Necesitas ayuda?</a><a class="hide-md hide-lg" data-toggle="modal" data-target="#modalAyuda"><img src="./assets/icons/icon-tel.svg"></a></header>
+      <div class="narrow-container">
+        <div class="title">
+          <h1>Bienvenid@ a CruzBlanca</h1>
+          <h2>Para afiliarte a la isapre CruzBlanca debes completar los cuatro pasos del proceso de suscripción:</h2>
+        </div>
+        <div class="section-flujoInicial">
+          <div class="section-flujoInicial_paso checkStep"><img src="./assets/icons/icon-identidad_check.svg" alt="Validación de identidad">
+            <div class="section-flujoInicial_paso-txt">
+              <h4>1 |</h4>
+              <h5>Validación de identidad</h5>
+            </div>
+          </div><img class="hide-sm" src="./assets/icons/icon-arrow_lite.svg" alt="luego">
+          <div class="section-flujoInicial_paso actualStep"><img src="./assets/icons/icon-declaracion_tiempo.svg" alt="Declaración de salud">
+            <div class="section-flujoInicial_paso-txt">
+              <h4>2 |</h4>
+              <h5>Declaración de salud</h5>
+            </div>
+          </div><img class="hide-sm" src="./assets/icons/icon-arrow_lite.svg" alt="luego">
+          <div class="section-flujoInicial_paso"><img src="./assets/icons/icon-completar.svg" alt="Completar FUN">
+            <div class="section-flujoInicial_paso-txt">
+              <h4>3 |</h4>
+              <h5>Firmar Plan de Salud</h5>
+            </div>
+          </div><img class="hide-sm" src="./assets/icons/icon-arrow_lite.svg" alt="luego">
+          <div class="section-flujoInicial_paso"><img src="./assets/icons/icon-desafiliacion.svg" alt="Proceso de desafiliación">
+            <div class="section-flujoInicial_paso-txt">
+              <h4>4 |</h4>
+              <h5>Proceso de desafiliación</h5>
+            </div>
+          </div>
+        </div>
+        <div class="alert pink"><img src="./assets/icons/icon-pendiente.svg">
+          <h4>Pendiente</h4>
+          <h5>Revisa la Declaración de Salud, hoja 7 cuadro letra E donde describe las restricciones de cobertura, luego podrás firmar.</h5>
+        </div>
+        <div class="tabla-resumen_home">
+          <table>
+            <thead>
+              <tr>
+                <th>Estado</th>
+                <th>Etapa</th>
+                <th>Detalle</th>
+                <th>Documento</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <span class="aprobado">Firmada</span></td>
+                <td>
+                   Declaración de salud</td>
+                <td>Detalle DS confirmada</td>
+                <td> <a class="blank">Declaración de Salud</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><span class="pendiente">Pendiente</span></td>
+                <td>
+                   Declaración de salud</td>
+                <td>Aceptada con restricciones </td>
+                <td> <a class="blank">Restricción Letra E</a></td>
+                <td><a class="table-btn" data-toggle="modal" data-target="#modalFirma2">Ir a Firmar</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <div class="modal duotone fade" id="modalFirma2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-tabla">
+              <h2 class="firma">Restricciones temporales de cobertura</h2>
+              <h3>La Isapre ha considerado las siguientes restricciones temporales de cobertura: </h3>
+              <div class="tabla-resumen_home">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Beneficiario</th>
+                      <th>Diagnóstico</th>
+                      <th>Cobertura</th>
+                      <th>Código</th>
+                      <th>Observaciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Felipe Alfonso Mendez Salgado</td>
+                      <td>Disposición para mejorar la eliminación urinaria</td>
+                      <td><span>30%</span> Hasta 14/05/2020</td>
+                      <td>DJEURT4BF3</td>
+                      <td>Sin Observaciones</td>
+                    </tr>
+                    <tr>
+                      <td>Daniela Mendez Salgado</td>
+                      <td>Disposición para mejorar la conducta organizada del lactante</td>
+                      <td><span>20%</span> Hasta 14/05/2020</td>
+                      <td>DJEURT4BF3</td>
+                      <td>Sin Observaciones</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4>Detalle en la página 7, cuadro letra E <a class="blank">Restricción Letra E</a></h4><a class="main-btn" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalFirma3">Siguiente</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal duotone fade" id="modalFirma3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="celeste">
+              <h2 class="firma">Restricciones temporales de cobertura</h2>
+              <p class="alone">Las restricciones temporales de cobertura para las preexistencias que han sido declaradas por el interesado en este documento, respecto de él y sus beneficiarios, se aplicarán por el plazo expresado en la columna “Cobertura”, contados desde el primer día del mes siguiente al de suscripción del contrato o de la incorporación del beneficiario, en su caso.</p>
+              <label class="checkBox">El afiliado acepta las restricciones temporales de cobertura para las patologías declaradas
+                <input type="checkbox" name="declaro"><span></span>
+              </label>
+            </div>
+            <div class="white deshabilitado">
+              <h3>Firma tu Declaración de Salud</h3>
+              <h5>Te hemos enviado un SMS con un código que tendrás que ingresar</h5>
+              <h6 class="sms">+569 1234 5678</h6>
+              <div class="section-input_only">
+                <label class="input"> <span class="tooltipLabel">Clave telefónica (6 dígitos)</span>
+                  <input class="input-number" type="text" name="sms" maxlength="6" disabled>
+                  <h6>La clave ingresada no es válida</h6>
+                </label>
+              </div>
+              <div class="spinerLink"><a class="link">Generar otra clave telefónica</a></div><a class="firmar-btn href2"><span class="firmaW">Firmar</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs/jQuery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

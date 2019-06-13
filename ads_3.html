@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon-bupa.png" type="image/x-icon">
+    <title>Cruz Blanca - Venta Web</title>
+  </head>
+  <body>
+    <main>
+      <div class="modal fade" id="modalAyuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body"><img src="./assets/icons/icon-ayuda.svg">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3>¿Necesitas ayuda?</h3>
+              <h4 class="help">Un asesor te entregará la ayuda que necesitas para completar correctamente la suscripción. <span class="span-blue">Te llamará al telefono registrado:</span></h4>
+              <h5>+569 1234 5678</h5><a class="main-btn center" href="home_ayuda.html">Quiero que me contacten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="inner-container"><img class="logo" src="./assets/icons/logo-CB.svg" alt="CruzBlanca"><a class="phone hide-sm" data-toggle="modal" data-target="#modalAyuda">¿Necesitas ayuda?</a><a class="hide-md hide-lg" data-toggle="modal" data-target="#modalAyuda"><img src="./assets/icons/icon-tel.svg"><a class="backArrow" href="ads_2.html">Volver</a></a></header>
+      <div class="narrow-container">
+        <div class="title ads">
+          <h1>Declaración de salud</h1>
+          <ul class="progress-tracker tracker_steps">
+            <li class="progress-step complete"><span class="progress-marker"> </span>
+              <div class="progress-text hide-sm">Antecedentes del cotizante</div>
+            </li>
+            <li class="progress-step complete"><span class="progress-marker"> </span>
+              <div class="progress-text hide-sm">Beneficiarios</div>
+            </li>
+            <li class="progress-step actual"><span class="progress-marker"> </span>
+              <div class="progress-text hide-sm">Listado de preguntas</div>
+            </li>
+            <li class="progress-step"><span class="progress-marker"> </span>
+              <div class="progress-text"> </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disclaimer">
+          <h4>¡Importante!</h4>
+          <p><span>Debe registrar TODAS las enfermedades, patologías o condiciones de salud diagnosticadas médicamente a usted y a cada uno de sus beneficiarios,</span> hayan o no requerido tratamiento, hospitalización o intervención quirúrgica, cualquiera sea la fecha de diagnóstico y su estado actual, incluso si se ha recuperado y ha sido dado de alta. <br><br>El siguiente listado es <span>solo referencial</span>, de modo que si usted o sus beneficiarios han tenido otra enfermedad, patología o condición de salud no indicada. Aquí debe declararla. </p>
+        </div><a class="main-btn goAds">Comenzar preguntas</a>
+      </div>
+      <div class="narrow-container">
+        <div class="section-ads_listado">
+          <div class="section-ads_listado-pregunta firstPregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades mentales o psiquiátricas o del comportamiento</h3>
+            <p>por ejemplo: trastornos del ánimo, depresión, neurosis, psicosis, esquizofrenia, problemas de dependencia (drogas, tabaco, alcohol, etc.)</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads1" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads1" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades del sistema nervioso</h3>
+            <p>por ejemplo: Accidentes cerebrovasculares (isquémicos o hemorrágicos), aneurismas cerebrales, tumores, quistes, hidrocefalia, TEC, fístulas del líquido céfaloraquídeo, tumor vertebral, tumor de médula o nervios periféricos, epilepsia, parkinson, alzheimer, esclerosismúltiple. neuropatías, jaqueca y/o migraña, meningitis, déficit atencional, o cualquier otra enfermedad del cráneo, cerebro, medular o nervios periféricos.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads2" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads2" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades del sistema respiratorio</h3>
+            <p>por ejemplo: asma, enfisema, neumonía, enfermedad pulmonar obstructiva crónica, tuberculosis, alergias respiratorias, sinusitis, enfermedades de las vías respiratorias altas (faringe) o bajas (laringe, tráquea, bronquios, pulmones) o cualquier enfermedad de los pulmones, pleura o sistema respiratorio.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads3" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads3" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades del corazón y sistema circulatorio</h3>
+            <p>por ejemplo: infarto del miocardio, enfermedad coronaria, angina de pecho, enfermedad reumática, hipertensión arterial, soplos al corazón, arritmias. Declara accidentes cerebrovasculares, aneurismas, várices, flebitis, úlceras vasculares o cualquier otra enfermedad al corazón, arterias, venas o sistema circulatorio.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads4" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads4" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades del sistema digestivo</h3>
+            <p>por ejemplo, úlcera al estómago o duodeno, tumores del estómago o del intestino, hemorragias digestivas, hemorroides, enfermedad de Crohn, colitis ulcerosa, pancreatitis, cálculos biliares, hepatitis, cirrosis, o cualquier otra enfermedad de los componentes del sistema digestivo, como esófago, estómago, intestino, recto, ano, hígado, vesícula, vía biliar, páncreas. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads5" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads5" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades ginecológicas y de las mamas</h3>
+            <p>por ejemplo, tumores, quistes, cáncer, miomas, endometriosis, endometritis o cualquier otra enfermedad de este sistema como enfermedades del útero, de la mama y ovarios. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads6" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads6" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades renales o del sistema genitourinario</h3>
+            <p>por ejemplo, nefritis, cistitis, cálculo al riñón, hiperplasia, adenoma o cáncer de la próstata, varicocele3, tumores renales, vesicales o testiculares o cualquier otra enfermedad de los componentes de este sistema como riñón, uréter, vejiga, uretra, próstata y genitales.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads7" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads7" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades reumatológicaso del sistema osteomuscular</h3>
+            <p>por ejemplo, lumbago, lumbociática, gota, artritis, artrosis, reumatismo, fracturas, hernia del núcleo pulposo, síndrome del túnel carpiano, enfermedades inmunitarias o autoinmunes como lupus o cualquier otra enfermedad de los componentes del sistema osteomuscular como columna, huesos, músculos y articulaciones.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads8" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads8" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades de la sangre o del sistema hematopoyético</h3>
+            <p>por ejemplo, anemia, hemofilia, alteraciones de la coagulación, linfoma, leucemia o cualquier otra enfermedad de la sangre o componentes del sistema hematopoyético como los ganglios, vasos linfáticos y el bazo. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads9" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads9" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades endocrinas, nutricionales y metabólicas</h3>
+            <p>por ejemplo, hipotiroidismo e hipertiroidismo, bocio, dislipidemia, obesidad, bulimia, anorexia, diabetes, resistencia insulínica, enfermedad de Addison, tumor de la hipófisis o tiroides, o cualquier otra enfermedad de las glándulas endocrinas, enfermedades nutricionales o metabólicas.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads10" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads10" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Malformaciones y/o enfermedades congénitas</h3>
+            <p>por ejemplo, labio leporino, pie bot, displasia de cadera, cardiopatías congénitas, síndrome de Down, o cualquier otra anormalidad, defecto físico o patología congénita.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads11" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads11" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Tumores y/o enfermedades oncológicas</h3>
+            <p>por ejemplo, cáncer, quistes, tumores, nódulos, pólipos de cualquier localización.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads12" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads12" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades de la piel y del tejido subcutáneo</h3>
+            <p>por ejemplo, hemangiomas, psoriasis, eczemas, secuela de quemaduras, úlceras, dermatitis, acné severo, melanoma, rosácea u otras enfermedades dermatológicas.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads13" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads13" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades del oído, nariz y garganta</h3>
+            <p>por ejemplo, otitis, sordera, adenoides, pólipos nasales, desviación del tabique nasal, o cualquier otra enfermedad de los oídos, nariz y garganta. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads14" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads14" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades oculares</h3>
+            <p>por ejemplo, miopía, astigmatismo, hipermetropía, estrabismo, presbicia, cataratas, glaucoma, retinopatías o cualquier otra enfermedad de los ojos. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads15" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads15" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades infecciosas y parasitarias</h3>
+            <p>por ejemplo, sífilis, gonorrea, rubéola, citomegalovirus, toxoplasmosis, tuberculosis, cisticercosis, enfermedad de Chagas, Hidatidosis, VIH positivo, SIDA o cualquier otra enfermedad infecciosa.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads16" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads16" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Enfermedades del embarazo, parto o puerperio</h3>
+            <p>por ejemplo, embarazo molar, preclampsia o eclampsia, diabetes gestacional, aborto, asfixia neonatal, parto prematuro. ¿Alguna de las beneficiarias identificadas en la Sección B de este formulario está embarazada actualmente? </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads17" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads17" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Traumatismos, accidentes y quemaduras</h3>
+            <p>Indique cualquier accidente, con o sin secuelas, detallando si es de origen laboral o no, deformidad adquirida, TEC, fracturas. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads18" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads18" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Cirugias estéticas</h3>
+            <p>por ejemplo, rinoplastia, lipoaspiración, implantes mamarios, abdominoplastia o cualquier otra cirugía con fines de embellecimiento.</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads19" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads19" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Infertilidad o Esterilidad</h3>
+            <p>Indique si Ud. o alguno de sus beneficiarios ha recibido o está en tratamiento de fertilidad por infertilidad o esterilidad. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads20" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads20" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Licencias médicas anteriores</h3>
+            <p>¿Ha tenido Ud. o alguno de sus beneficiarios licencias médicas en los últimos 24 meses? Si su respuesta es afirmativa indique diagnóstico y número de días de la(s) licencia(s). </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads21" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads21" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Indique Hospitalizaciones anteriores</h3>
+            <p>Indique si Ud. o alguno de sus beneficiarios ha estado hospitalizado alguna vez y bajo qué diagnóstico. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads22" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads22" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Prótesis, Órtesis</h3>
+            <p>señale si utiliza usted o cualquiera de sus beneficiarios algún tipo de prótesis u órtesis, tales como, audífonos, lentes ópticos, marcapaso, bastones ortopédicos o muletas, silla de ruedas</p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads23" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads23" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div><a class="continue-btn noShow">Continuar</a>
+            <div class="white-space hide-sm"></div>
+          </div>
+          <div class="section-ads_listado-pregunta hidePregunta">
+            <h6>Preguntas para el cotizante y sus beneficiarios</h6>
+            <h3>Otras enfermedades</h3>
+            <p>Consigne aquí si Ud. o alguno de sus beneficiarios padece o ha padecido alguna enfermedad o condición de salud, lesión o cualquier otra condición médica y/o enfermedad crónica que no esté identificada anteriormente y que se le haya diagnosticado médicamente. </p>
+            <div class="declara-container">
+              <label class="radio declara"> <span>Declara:</span>
+                <label class="checkRound">Sí
+                  <input type="radio" name="ads24" value="si"><span class="checkmark"></span>
+                </label>
+                <label class="checkRound">No
+                  <input type="radio" name="ads24" value="no"><span class="checkmark"></span>
+                </label>
+              </label>
+              <div class="declara-container_box noDeclaraBeneficiario lastBox">
+                <h6>* Campos obligatorios</h6>
+                <div class="beneficiario-datos firstBox">
+                  <label class="select obligatory">¿A quién declara?
+                    <select name="beneficiario">
+                      <option value="">Selecciona beneficiario</option>
+                      <option value="beneficiario1">Beneficiario 1</option>
+                      <option value="beneficiario2">Beneficiario 2</option>
+                      <option value="beneficiario3">Beneficiario 3</option>
+                    </select>
+                  </label>
+                  <label class="input obligatory"> <span class="tooltipLabel">Fecha aproximada diagnóstico</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateD" maxLength="7">
+                  </label>
+                  <label class="input obligatory fullLabel"> <span class="tooltipLabel">Diagnóstico
+                      <div class="tooltipBox">
+                        <p>El diagnóstico es la evaluación que te entregó el médico mediante una observación de tus signos o síntomas.</p>
+                      </div></span>
+                    <input type="text" name="diagnostico">
+                  </label>
+                  <label class="input">Nombre médico tratante
+                    <input type="text" name="medico">
+                  </label>
+                  <label class="input"> <span class="tooltipLabel">Fecha intervención quirúrgica</span>
+                    <input class="input-date" type="text" placeholder="mm/aaaa" name="dateI" maxLength="7">
+                  </label>
+                </div><a class="declarar-btn">
+                   Declarar otro diagnóstico <br><span>al cotizante y/o a otro beneficiario</a>
+              </div>
+            </div>
+          </div>
+        </div><a class="main-btn center revisarDS noShow">Revisar resumen DS</a>
+      </div>
+      <div class="narrow-container">
+        <div class="resumen-ds hidePregunta">
+          <div class="title">
+            <h1>Resumen Declaración de Salud</h1>
+            <h2>Revisa las respuestas en donde <span class="pink">sí</span> declaraste algún diagnóstico a ti y/o a tus beneficiarios</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nº</th>
+                <th>Pregunta</th>
+                <th>Declara: Sí</th>
+                <th> </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Enfermedades mentales o psiquiátricas o del comportamiento</td>
+                <td>Felipe Alfonso Mendez Salgado</td>
+                <td><a class="modificar">Modificar declaración</a></td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>Enfermedades del corazón y sistema circulatorio</td>
+                <td>Daniela Andrea Mendez Salgado</td>
+                <td><a class="modificar">Modificar declaración</a></td>
+              </tr>
+            </tbody>
+          </table><a class="main-btn center" href="home_ads-pendiente.html">Confirmo mi DS</a>
+        </div>
+      </div>
+      <div class="aside-counter hide hide-sm">
+        <div class="aside-counter_row">
+          <div class="number">1</div>
+          <div class="answer" id="answer1"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">2</div>
+          <div class="answer" id="answer2"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">3</div>
+          <div class="answer" id="answer3"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">4</div>
+          <div class="answer" id="answer4"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">5</div>
+          <div class="answer" id="answer5"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">6</div>
+          <div class="answer" id="answer6"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">7</div>
+          <div class="answer" id="answer7"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">8</div>
+          <div class="answer" id="answer8"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">9</div>
+          <div class="answer" id="answer9"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">10</div>
+          <div class="answer" id="answer10"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">11</div>
+          <div class="answer" id="answer11"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">12</div>
+          <div class="answer" id="answer12"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">13</div>
+          <div class="answer" id="answer13"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">14</div>
+          <div class="answer" id="answer14"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">15</div>
+          <div class="answer" id="answer15"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">16</div>
+          <div class="answer" id="answer16"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">17</div>
+          <div class="answer" id="answer17"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">18</div>
+          <div class="answer" id="answer18"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">19</div>
+          <div class="answer" id="answer19"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">20</div>
+          <div class="answer" id="answer20"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">21</div>
+          <div class="answer" id="answer21"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">22</div>
+          <div class="answer" id="answer22"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">23</div>
+          <div class="answer" id="answer23"> </div>
+        </div>
+        <div class="aside-counter_row">
+          <div class="number">24</div>
+          <div class="answer" id="answer24"></div>
+        </div>
+      </div>
+    </main>
+    <div class="progress-footer"><img src="./assets/icons/icon-quest.svg">
+      <div class="bar-count"> <span>1</span>/24</div>
+      <h6>Tus respuestas se están guardado automáticamente. <span class="hide-sm">Si decides continuar después, podrás volver a verlas.</span></h6>
+    </div>
+    <script src="js/libs/jQuery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

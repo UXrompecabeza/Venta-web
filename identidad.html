@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon-bupa.png" type="image/x-icon">
+    <title>Cruz Blanca - Venta Web</title>
+  </head>
+  <body>
+    <main>
+      <div class="modal fade" id="modalAyuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body"><img src="./assets/icons/icon-ayuda.svg">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3>¿Necesitas ayuda?</h3>
+              <h4 class="help">Un asesor te entregará la ayuda que necesitas para completar correctamente la suscripción. <span class="span-blue">Te llamará al telefono registrado:</span></h4>
+              <h5>+569 1234 5678</h5><a class="main-btn center" href="home_ayuda.html">Quiero que me contacten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="inner-container"><img class="logo" src="./assets/icons/logo-CB.svg" alt="CruzBlanca"><a class="phone hide-sm" data-toggle="modal" data-target="#modalAyuda">¿Necesitas ayuda?</a><a class="hide-md hide-lg" data-toggle="modal" data-target="#modalAyuda"><img src="./assets/icons/icon-tel.svg"></a></header>
+      <div class="narrow-container">
+        <div class="section-identidad">
+          <ul class="progress-tracker progress-tracker--vertical">
+            <li class="progress-step"><span class="progress-marker">?</span>
+              <div class="progress-text">
+                <div class="help-box"><img src="./assets/icons/icon-identidad.svg" alt="Verificar identidad">
+                  <h2>Verificación de identidad</h2>
+                  <ul>
+                    <li>Responde las siguientes preguntas para comprobar tu identidad.</li>
+                    <li>Recuerda que tienes 5 minutos para responder las 4 preguntas.</li>
+                    <li>Si apruebas el test validaremos tu identidad, renta y empleador.</li>
+                  </ul>
+                  <button class="btn-orange">Comenzar</button>
+                </div>
+              </div>
+            </li>
+            <li class="progress-step disabled"><span class="progress-marker">1</span>
+              <div class="progress-text">
+                <div class="tab-progress">
+                  <input id="chck1" type="checkbox" disabled>
+                  <label class="tab-progress-label" for="chck1">¿En cuál de estas direcciones vivió alguna vez?</label>
+                  <div class="tab-progress-content">
+                    <label class="checkRound">Los ganaderos 03260
+                      <input type="radio" name="rd1"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">Santa Elena 895
+                      <input type="radio" name="rd1"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">San Francisco 228
+                      <input type="radio" name="rd1"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">Pedro de Valdivia 206
+                      <input type="radio" name="rd1"><span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="progress-step disabled"><span class="progress-marker">2</span>
+              <div class="progress-text">
+                <div class="tab-progress">
+                  <input id="chck2" type="checkbox" disabled>
+                  <label class="tab-progress-label" for="chck2">¿Qué modelo de auto tuviste en el año 2009?</label>
+                  <div class="tab-progress-content">
+                    <label class="checkRound">Suzuki Ertiga
+                      <input type="radio" name="rd2"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">Changan CX70
+                      <input type="radio" name="rd2"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">Chevrolet Spin
+                      <input type="radio" name="rd2"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">Mazda 5
+                      <input type="radio" name="rd2"><span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="progress-step disabled"><span class="progress-marker">3</span>
+              <div class="progress-text">
+                <div class="tab-progress">
+                  <input id="chck3" type="checkbox" disabled>
+                  <label class="tab-progress-label" for="chck3">¿En cuál de las siguientes comunas vivió usted en el año 1999?</label>
+                  <div class="tab-progress-content">
+                    <label class="checkRound">Alhue
+                      <input type="radio" name="rd3"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">El Monte
+                      <input type="radio" name="rd3"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">Lo Barnechea
+                      <input type="radio" name="rd3"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">Ñuñoa
+                      <input type="radio" name="rd3"><span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="progress-step disabled"><span class="progress-marker">4</span>
+              <div class="progress-text">
+                <div class="tab-progress">
+                  <input id="chck4" type="checkbox" disabled>
+                  <label class="tab-progress-label" for="chck4">¿Cuál es el RUT del cónyuge?</label>
+                  <div class="tab-progress-content">
+                    <label class="checkRound">9.123.456-0
+                      <input type="radio" name="rd4"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">9.567.321-1
+                      <input type="radio" name="rd4"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">9.789.654-4
+                      <input type="radio" name="rd4"><span class="checkmark"></span>
+                    </label>
+                    <label class="checkRound">9.123.456-7
+                      <input type="radio" name="rd4"><span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul><a class="main-btn center disabled">Enviar</a>
+        </div>
+      </div>
+    </main>
+    <div class="container-timer"><span id="timer">5:00</span>
+      <div class="modal fade" id="modalTimesUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body"><img src="./assets/icons/icon-sadness.svg">
+              <h3>¡Lo sentimos! No hemos validado tu identidad</h3>
+              <h4>Sólo dispones de <span class="span-blue">una oportunidad más</span> para responder las preguntas de la validación de identidad. Por motivos de seguridad, podrás intentar nuevamente en <span class="span-black">60 minutos más</span>.</h4><a class="main-btn center" href="home_noval.html">Ir al inicio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs/jQuery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

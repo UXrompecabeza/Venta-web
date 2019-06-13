@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/favicon-bupa.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cruz Blanca - Venta Web</title>
+  </head>
+  <body>
+    <main>
+      <div class="modal fade" id="modalAyuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body"><img src="./assets/icons/icon-ayuda.svg">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3>¿Necesitas ayuda?</h3>
+              <h4 class="help">Un asesor te entregará la ayuda que necesitas para completar correctamente la suscripción. <span class="span-blue">Te llamará al telefono registrado:</span></h4>
+              <h5>+569 1234 5678</h5><a class="main-btn center" href="home_ayuda.html">Quiero que me contacten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="inner-container"><img class="logo" src="./assets/icons/logo-CB.svg" alt="CruzBlanca"><a class="phone hide-sm" data-toggle="modal" data-target="#modalAyuda">¿Necesitas ayuda?</a><a class="hide-md hide-lg" data-toggle="modal" data-target="#modalAyuda"><img src="./assets/icons/icon-tel.svg"></a></header>
+      <div class="narrow-container">
+        <div class="title">
+          <h1>Verificación exitosa</h1>
+          <div class="login-container_recuperar exito">
+            <h2>Respuestas enviadas correctamente</h2><img src="./assets/icons/icon-exito.svg">
+            <h3>Hemos validado tu información. Para continuar cambia la clave provisoria que te enviamos al correo <span>danixxxx@xxxxxx.com</span></h3><a class="main-btn center" href="cambio-clave.html">Cambiar clave</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/libs/jQuery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

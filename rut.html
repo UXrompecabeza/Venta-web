@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/favicon-bupa.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cruz Blanca - Venta Web</title>
+  </head>
+  <body>
+    <main>
+      <div class="modal fade" id="modalAyuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body"><img src="./assets/icons/icon-ayuda.svg">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3>¿Necesitas ayuda?</h3>
+              <h4 class="help">Un asesor te entregará la ayuda que necesitas para completar correctamente la suscripción. <span class="span-blue">Te llamará al telefono registrado:</span></h4>
+              <h5>+569 1234 5678</h5><a class="main-btn center" href="home_ayuda.html">Quiero que me contacten</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="inner-container"><img class="logo" src="./assets/icons/logo-CB.svg" alt="CruzBlanca"><a class="phone hide-sm" data-toggle="modal" data-target="#modalAyuda">¿Necesitas ayuda?</a><a class="hide-md hide-lg" data-toggle="modal" data-target="#modalAyuda"><img src="./assets/icons/icon-tel.svg"></a></header>
+      <div class="narrow-container">
+        <div class="title">
+          <h1>Validación de identidad</h1>
+          <h2>Completa los siguientes datos</h2>
+        </div>
+        <div class="section-input_rut">
+          <label>RUT
+            <input class="disabled" type="text" name="rut" disabled value="12.345.678-9">
+          </label>
+          <h3>Ingrese el número de serie de tu cédula de identidad</h3>
+          <label class="labelSerie">Nº de serie <span> Sin puntos</span>
+            <input class="serieNumber" type="text" name="serie" placeholder="123456789" maxLength="9"><a class="tooltipHelp">¿Qué es esto?
+              <div class="tooltipBox">
+                <h4>Número de documento o serie</h4>
+                <div class="cedulas-container">
+                  <div class="cedula-new"><img src="./assets/img/ced-nueva.png">
+                    <h5>Cédula nueva</h5>
+                  </div>
+                  <div class="cedula-old"><img src="./assets/img/ced-antigua.png">
+                    <h5>Cédula antigua</h5>
+                  </div>
+                </div>
+              </div></a>
+            <h6>El número ingresado no es válido</h6>
+          </label>
+        </div><a class="main-btn center disabled">Siguiente</a>
+      </div>
+    </main>
+    <script src="js/libs/jQuery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>
